@@ -4,7 +4,7 @@ USE perpustakaan;
 
 -- Tabel anggota
 CREATE TABLE anggota (
-    id_anggota INT PRIMARY KEY AUTO_INCREMENT,
+    id_anggota SERIAL PRIMARY KEY,
     nama VARCHAR(100),
     alamat VARCHAR(150),
     no_telp VARCHAR(15)
@@ -12,7 +12,7 @@ CREATE TABLE anggota (
 
 -- Tabel buku
 CREATE TABLE buku (
-    id_buku INT PRIMARY KEY AUTO_INCREMENT,
+    id_buku SERIAL PRIMARY KEY,
     judul VARCHAR(100),
     penulis VARCHAR(100),
     tahun_terbit INT,
@@ -21,7 +21,7 @@ CREATE TABLE buku (
 
 -- Tabel peminjaman
 CREATE TABLE peminjaman (
-    id_peminjaman INT PRIMARY KEY AUTO_INCREMENT,
+    id_peminjaman SERIAL PRIMARY KEY,
     id_anggota INT,
     id_buku INT,
     tanggal_pinjam DATE,
