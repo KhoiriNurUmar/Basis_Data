@@ -1,3 +1,5 @@
+-- Database ini dibuat menggunakan PostgreSQL
+
 -- Buat database
 CREATE DATABASE perpustakaan;
 USE perpustakaan;
